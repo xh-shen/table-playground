@@ -1,0 +1,50 @@
+<!--
+ * @Author: shen
+ * @Date: 2022-10-17 15:32:57
+ * @LastEditors: shen
+ * @LastEditTime: 2022-12-12 15:41:01
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="./src/assets/logo.png" />
+  <title>Shene Playground</title>
+  <script>
+    // process shim for old versions of @vue/compiler-sfc dependency
+    window.process = { env: {} }
+  </script>
+  <script type="module" src="./src/main.ts"></script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+  <style>
+    #app {
+      --el-color-primary: #1677ff;
+      --el-color-primary-light-3: #5ca0ff;
+      --el-color-primary-light-5: #8bbbff;
+      --el-color-primary-light-7: #b9d6ff;
+      --el-color-primary-light-8: #d0e4ff;
+      --el-color-primary-light-9: #e8f1ff;
+      --el-color-primary-dark-2: #125fcc;
+    }
+
+    .dark #app {
+      --el-color-primary: #1677ff;
+      --el-color-primary-light-3: #1559b9;
+      --el-color-primary-light-5: #15468a;
+      --el-color-primary-light-7: #15325b;
+      --el-color-primary-light-8: #142843;
+      --el-color-primary-light-9: #141e2c;
+      --el-color-primary-dark-2: #4592ff;
+    }
+  </style>
+</body>
+
+</html>
